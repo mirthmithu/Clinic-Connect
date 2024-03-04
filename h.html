@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>h</title>
+  <style>
+    /* CSS styles */
+    body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height:1.6;
+            scroll-behavior: smooth;
+            display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+        }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    section {
+      padding: 20px;
+      background-color: #f9f9f9;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #4CAF50;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    form input {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    form button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #45a049;
+    }
+    .background-section {
+      background-image: url('bg7.png');
+      background-size: cover; /* Cover the entire container while maintaining aspect ratio */
+      background-repeat: no-repeat;
+      background-position: top center; /* Start the background image from the top center */
+      height: 100vh; /* Cover the entire viewport height */
+      width: 100vw; /* Cover the entire viewport width */
+      /* Fix the position of the background image */
+      /* Ensure the background image is behind other content */
+    }
+    div.background-section h1 {
+  position: absolute;
+  top:2%; /* Move the top edge of the h1 to the middle */
+  left: 15%; /* Move the left edge of the h1 to the middle */
+  transform: translate(-50%, -50%); /* Center the h1 both horizontally and vertically */
+  color: white; /* Example color */
+  font-size: 48px; /* Example font size */
+  text-align: center; /* Center align the text */
+}
+.background-section img.logo {
+      position: relative;
+      top: 7px; /* Adjust as needed */
+      left: 5px; /* Adjust as needed */
+      height: 70px;
+      width: 70px; /* Adjust width as needed */
+    }
+    nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgba(186, 36, 36, 0.781); /* Transparent background */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background on hover */
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+    .background-section img.pic {
+      position: absolute;
+      top: 110px; /* Adjust as needed */
+      left: 700px; /* Adjust as needed */
+      height: 70%;
+      width: 40%; /* Adjust width as needed */
+    }
+
+    div.background-section h2 {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      transform: translate(-50%, -50%);
+      width: 50%; /* Set width to 50% to make it take the left half of the window */
+      color: white; /* Example color */
+      font-size: 24px; /* Example font size */
+      text-align: left; /* Left align the text */
+      padding: 20px; /* Add padding for better readability */
+      font-family: 'Indie Flower', cursive; 
+       
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a different font family */
+    }
+    h2 {
+  color: rgb(81, 81, 209);
+  animation: jump 0.5s infinite alternate;
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+  top: 40%; /* Adjust as needed */
+  left: 5%; /* Position it 5% from the left side of the viewport */
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.section2 {
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 0px;
+  align-self: flex-start;
+}
+
+.bottom-box {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items to the center vertically */
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 1500px;
+    background-color: rgb(81, 81, 209);
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 1200px;
+    border: grey 2px solid;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Add box shadow */
+    color: white; /* Change text color to white */
+} 
+
+
+
+
+.section3{
+  background-color: white;
+}
+
+.section {
+  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 equal columns */
+    grid-auto-rows: minmax(200px, auto); /* Rows will adjust based on content */
+    gap: 30px; /* Gap between grid items */
+}
+
+.box {
+  margin-left: 65px;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 300px; /* Increase the width */
+    height: 300px; /* Increase the height */
+    margin-bottom: 100px;
+    transition: border-color 0.3s ease, transform 0.3s ease; /* Smooth transition for border color and transform */
+}
+
+.box:hover {
+ 
+    border-color:rgb(81, 81, 209); /* Change border color on hover */
+    transform: scale(1.05); /* Scale up the box on hover */
+}
+
+.box img {
+    width: 100%;
+    display: block;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    opacity: 0; /* Initially hidden */
+}
+
+
+.box:hover .description {
+    opacity: 1; /* Show description box on hover */
+}
+
+
+
+
+ 
+.section4 {
+  background-color: white;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  padding: 50px 20px;
+  background-image: url('ft.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover;
+  background-repeat: repeat;
+}
+.section4 img{
+  width: 100%;
+  color: rgb(221, 221, 221);
+}
+
+.left-content,
+.right-content {
+  width: 48%; /* Set width for each content column */
+}
+
+.left-content {
+  padding-right: 20px; /* Add spacing between columns */
+}
+
+.left-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-content input,
+.left-content button {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 100%; /* Set width to fill the container */
+}
+
+.right-content h3 {
+  margin-top: 0;
+}
+
+.right-content p {
+  margin: 0; /* Reset margin */
+}
+
+
+.sec{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ensure full viewport height */
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    overflow: hidden; /* Hide content overflow */
+}
+.fade-out {
+    opacity: 0;
+}
+.corner-image {
+    position: relative;
+    top: 100px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Maintain aspect ratio */
+}
+section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: scale(0.9); /* Initial zoomed-out state */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Add or modify transition for opacity and transform */
+}
+
+section.active {
+  opacity: 1;
+  transform: scale(1); /* Zoom in effect for active sections */
+}
+  </style>
+</head>
+<body>
+    
+
+    <div class="background-section ">
+      <div class="sec">
+        <img src="logo.png" class="logo">
+        <h1>MedGen</h1>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Login</a>
+            <a href="#">Sign up</a>
+          </nav>
+          <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusantium possimus. Quibusdam, cupiditate! Atque corrupti minus placeat non quis? Ipsam recusandae facere reiciendis libero quam aliquid nobis, amet nesciunt sapiente!</h2>
+
+          <img src="pic4.png" class="pic">
+          </div>
+    </div>
+    <section class="section2">
+      <div class="sec"></div>
+      <div class="about-us">
+          <h2>About Us</h2>
+          <img src="au1.png" alt="Image Description" class="corner-image">
+      </div>
+      <div class="bottom-box"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptates officia veniam dignissimos, quibusdam odio quam aspernatur esse nihil pariatur numquam non eligendi recusandae iusto iste sunt. Provident, libero maiores.</div>
+  </section>
+  
+
+    <section class="section3">
+      <div class="about-us">
+      <h2>Feature</h2>
+    </div>
+      <div class="section">
+        <div class="box">
+            <img src="pic1.jpeg" alt="Image 1">
+            <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quod magnam adipisci neque nam culpa deserunt reprehenderit, molestias vel veritatis consequuntur, voluptas, iusto eius nisi inventore illo numquam cumque blanditiis. 1</div>
+        </div>
+        <div class="box">
+            <img src="pic1.jpeg" alt="Image 2">
+            <div class="description">Description 2</div>
+        </div>
+        <div class="box">
+          <img src="pic1.jpeg" alt="Image 1">
+          <div class="description">Description 1</div>
+      </div>
+      <div class="box">
+          <img src="pic1.jpeg" alt="Image 2">
+          <div class="description">Description 2</div>
+      </div>
+      <div class="box">
+        <img src="pic1.jpeg" alt="Image 1">
+        <div class="description">Description 1</div>
+    </div>
+    <div class="box">
+        <img src="pic1.jpeg" alt="Image 2">
+        <div class="description">Description 2</div>
+    </div>
+        <!-- Add more box items as needed -->
+    </div>
+    
+     
+      
+    </section>
+    
+    <section class="section4">
+      
+      <div class="left-content">
+        <h3>Subscribe to Our Service</h3>
+        <p>Stay up-to-date with our latest news and updates by subscribing to our newsletter.</p>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email Address" required>
+          <input type="tel" name="phone" placeholder="Your Phone Number">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="right-content">
+        <h3>Contact Us</h3>
+        <p>Email: info@example.com</p>
+        <p>Phone: +1234567890</p>
+        <p>Address: 123 Main Street, City, Country</p>
+      </div>
+     
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+       const sections = document.querySelectorAll("section");
+       const windowHeight = window.innerHeight;
+   
+       function handleScroll() {
+           sections.forEach(function(section) {
+               const sectionTop = section.getBoundingClientRect().top;
+   
+               if (sectionTop <= windowHeight * 0.75) {
+                   section.classList.add("active");
+               } else {
+                   section.classList.remove("active");
+               }
+           });
+       }
+   
+       document.addEventListener("scroll", function() {
+           handleScroll();
+       });
+   
+       handleScroll();
+   });
+   
+   
+   </script>
+</body>
+</html>
