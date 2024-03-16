@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedGen-SignUp</title>
+    <link rel="stylesheet" href="signup.css" type="text/css">
+    
+</head>
+<body>
+   
+    <div id="close" >
+    <div id="enclosesignin">  
+        <form id="signid"  >
+               <i id="sign_title">MEDGEN - ConnectClinics<br><b>SIGN-UP</b></i><BR>
+
+                NAME<input type="text" id="name" placeholder="Name " required>
+                 EMAIL<input type="email" id="email" placeholder=" Email id" required>
+
+                  PASSWORD <input type="password" id="password" placeholder=" Enter password" required>
+                  PHONE-NO<input type="tel" id="num" name="num" placeholder="999-999-99-99 " minlength="10" maxlength="10" required> 
+                  GENDER
+                  <select id="gen" name="gen">
+                   <option value="Female">Female</option>
+                   <option value="Male">Male</option>
+                   <option value="Other">Other</option>
+                 </select>
+                 DATE-OF-BIRTH
+                  <input type="date" id="dob" name="dob" placeholder="Date Of Birth"  min="1980-01-01" max="2024-12-31" required>
+                 UPLOAD PROOF
+                  <input type="file" name="fileInput" id="fileInput">
+            
+               <button type="submit" id="admit">SIGN UP</button>        
+         </form>
+         </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+#container {
+    display: flex;
+	flex-wrap:wrap;
+	padding :10px;
+	
+  }
+  
+
+ 
+  #image {
+    flex: 0 0 auto;
+    margin-right: 20px;
+	display:flex;
+	position: absolute;
+	left:130px;
+	top:50px;
+  border: 1px solid transparent;
+  box-shadow:2px 3px 4px rgb(249, 249, 216);
+  }
+  #closure{
+    border: 1px solid black;
+    width:55%;
+    height:550px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    position:absolute;
+    top:25px;
+    left:300px;
+    background:pink;
+    padding:250px;
+
+  }
+  #descrip
+  {
+position:absolute;
+left:0;
+
+  }
